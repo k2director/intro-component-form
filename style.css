@@ -101,6 +101,11 @@ letter-spacing: 2px;
 outline: none;
 }
 
+.form-submit:hover{
+    background: hsl(154, 75%, 56%);
+cursor: pointer;
+}
+
 
 h1, p {
     color: white;
@@ -222,8 +227,68 @@ margin: -10px 10px -0px 0;
 
 
 
+/* Mobile Styles wider less than 514px */
+@media only screen and (max-width: 514px) {
+
+
+    body{
+        min-height: 100vw;
+
+        padding: 60px 20px;
+
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        line-height: 1.1;
+        font-weight: 700;
+    margin-bottom: 22px;
+    }
+
+.blueboxtext{
+        font-size: 14.5px;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+
+.textpart{
+    padding: 0px 0px 60px 0px;
+flex-basis: 90%;
+justify-content: center;
+text-align: center;
+}
+
+
+.form-row{
+    margin: 10px 16px;
+
+}
+
+
+
+.form-submit{
+    font-size: 15px;
+    margin: 20px 16px;
+
+}
+
+.form-row input{
+    font-size: 15px;
+}
+
+
+
+}
+
+
+
+
+
+
 /* Desktop Style in Narrow Browser of Tablet */
-@media only screen and (max-width: 1234px) {
+@media only screen and (min-width: 515 max-width: 1234px) {
 
 body{
     min-height: 100vw;
@@ -232,9 +297,6 @@ body{
 
 }
 
-form{
-
-}
 
 .blueboxandformcontainer{
     flex: 0 0 100%;
