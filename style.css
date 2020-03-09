@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +25,9 @@
     margin: 0 auto;
   }
 
+
+/* MAJOR CONTAINER STYLES */
+
   .textpart{
       flex-basis: 47%;
       padding: 60px 40px 60px 0px;
@@ -30,8 +35,8 @@
 
 
   .bluebox{
-      height: 56px;
-      background-color: hsl(248, 32%, 49%);
+height: 56px;
+background-color: hsl(248, 32%, 49%);
 display: flex;
 align-items: center;
 justify-content: center;
@@ -42,12 +47,14 @@ margin-bottom: 20px;
 
 .blueboxandformcontainer{
     flex: 1 1 47%;
-
 max-width: 540px;
 min-width: 300px;
 
 }
 
+
+
+/* FORM STYLES */
 
 form{
     display: flex;
@@ -56,20 +63,16 @@ form{
     background: white;
     padding-top: 20px;
     border-radius: 16px;
-    /* min-height: 474px; */
 }
-
 
 
 .form-row {
     display: flex;
-    /* justify-content: flex-start; */
     flex-direction: column;
-    /* flex-wrap: wrap; */
     margin: 10px 39px;
-    
   }
   
+
   .form-row input {
       height: 58px;
     width: 100%;
@@ -79,7 +82,6 @@ form{
     border-radius: 8px;
 font-weight: 600;
 color: rgb(118, 117, 117);
-
   }
 
 
@@ -96,6 +98,11 @@ font-weight: 500;
 letter-spacing: 2px;
 outline: none;
 }
+
+
+
+
+/* TEXT STYLES */
 
 .form-submit:hover{
     background: hsl(154, 75%, 56%);
@@ -141,20 +148,7 @@ p{
 }
 
 
-.erroricon-styling{
-    position: relative;
-width: 25px;
-align-self: flex-end;
-bottom: 54px;
 
-margin-right: 10px;
-margin: -10px 10px -15px 0;
-
-}
-
-.erroricon-hide{
-    display: none;
-}
 
 
 
@@ -170,6 +164,22 @@ margin: -10px 10px -15px 0;
     
 
 
+    /* ERROR ICON STYLING & HDING */
+
+.erroricon-styling{
+    position: relative;
+width: 25px;
+align-self: flex-end;
+bottom: 54px;
+
+margin-right: 10px;
+margin: -10px 10px -15px 0;
+
+}
+
+.erroricon-hide{
+    display: none;
+}
 
 
 
@@ -225,9 +235,7 @@ margin: -10px 10px -15px 0;
 
     body{
         min-height: 100vw;
-
         padding: 60px 20px;
-
     }
 
     h1 {
@@ -245,6 +253,7 @@ margin: -10px 10px -15px 0;
         font-size: 15px;
     }
 
+
 .textpart{
     padding: 0px 0px 60px 0px;
 flex-basis: 90%;
@@ -255,33 +264,26 @@ text-align: center;
 
 .form-row{
     margin: 10px 16px;
-
 }
-
 
 
 .form-submit{
     font-size: 15px;
     margin: 20px 16px;
-
 }
 
 .form-row input{
     font-size: 15px;
 }
-
-
-
 }
+
 
 
 @media only screen and (min-width: 515px) and (max-width: 772px) {
 
     body{
         min-height: 100vw;
-
         padding: 60px 20px;
-
     }
 
 h1{
@@ -293,10 +295,7 @@ h1{
     text-align: center;
     margin: 0 auto;
     padding: 60px 20px;
-
-    
 }
-
 }
 
 
@@ -329,7 +328,6 @@ min-width: 300px;
 h1{
     /* font-size: 8rem; */
     font-size: 3.5rem;
-
 }
 
 };

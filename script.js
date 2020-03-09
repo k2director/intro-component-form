@@ -7,16 +7,14 @@ const firstNameField = document.querySelector('.firstNameField')
 const lastNameField = document.querySelector('.lastNameField')
 const emailField = document.querySelector('.emailField')
 const passwordField = document.querySelector('.passwordField')
-
 const passwordField2 = document.querySelector('.passwordField2')
 
 
-// TARGET THE 'SUCCESS!' MESSAGE FOR EACH INPUT FIELD IN ORDER TO HIDE/SHOW MESSAGE
+// TARGET THE 'SUCCESS!' MESSAGE FOR EACH INPUT FIELD IN ORDER TO HIDE/SHOW MESSAGE THAT'S ALREADY PLACED IN HTML
 const successFirst = document.querySelector('.successFirst');
 const successLast = document.querySelector('.successLast');
 const successEmail = document.querySelector('.successEmail');
 const successPassword = document.querySelector('.successPassword');
-
 const successPassword2 = document.querySelector('.successPassword2');
 
 
@@ -26,44 +24,21 @@ const iconFirst = document.querySelector('.iconFirst');
 const iconLast = document.querySelector('.iconLast');
 const iconEmail = document.querySelector('.iconEmail');
 const iconPassword = document.querySelector('.iconPassword');
-
 const iconPassword2 = document.querySelector('.iconPassword2');
 
 
 
-// TARGET 
+// TARGET RED ERROR MESSAGE FOR EACH INPUT FIELD IN ORDER TO HIDE/SHOW MESSAGE THAT'S ALREADY IN HTML
 const firstNameInput = document.querySelector('#first-name');
 const lastNameInput = document.querySelector('#last-name');
 const emailInput = document.querySelector('#email');
 const passwordInput = document.querySelector('#password');
-
 const passwordInput2 = document.querySelector('#password2');
 
 
 
 
-
-
-// CONFIRM THESE CAN BE DELETED... 
-const errorMsg = document.querySelector('.errormessage');
-const errorMsgName = document.querySelector('.errormessage-name')
-const nameField = document.querySelector('#first-name');
-const errorIconName = document.querySelector('.erroricon-name');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// THIS ONE FUNCTION TRIMS OFF UNNECESSARY SPACES FROM INPUT FIELD VALUES AND CHECKS EACH INPUT VALUE TO DETERMINE WHAT HTML ERROR AND SUCCESS TEXT TO SHOW/HIDE, AS WELL AS WHETHER TO SHOW/HIDE THE RED ERROR/WARNING ICON(!).
 
 
 function checkInputs(){
@@ -122,8 +97,6 @@ if(lastNameValue === ''){
 
 
     // EMAIL FIELD VALIDATION CHECK, WHICH CALLS ANOTHER FUNCTION BELOW TO ACTUALLY DO THE VALIDATION...
-
-
     if (validateEmail(emailInputValue)) {
         emailField.classList.remove('fieldBorderRed');
         emailField.classList.add('fieldBorderGreen');
@@ -160,7 +133,7 @@ if (passwordValue === ""){
 
 
 
-    
+
     // RE-ENTER PASSWORD  FIELD CHECK, SIMPLY CHECKS TO MAKE SURE IT'S SAME AS FIRST PASSWORD FIELD...
     if (passwordValue2 === ""){
         passwordField2.classList.add('fieldBorderRed');
